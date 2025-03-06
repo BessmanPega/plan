@@ -9,7 +9,7 @@ import MarkdownItAnchor from 'markdown-it-anchor';
 const md =
   new MarkdownIt({ linkify: true })
     .use(MarkdownItTaskLists)
-    .use(MarkdownItTableOfContents, { includeLevel: [1] })
+    .use(MarkdownItTableOfContents, { includeLevel: [1, 2] })
     .use(MarkdownItAnchor);
 
 const config = fs.readFileSync("config.json");
